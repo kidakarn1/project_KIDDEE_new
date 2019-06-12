@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 10, 2019 at 04:49 AM
+-- Generation Time: Jun 12, 2019 at 07:23 AM
 -- Server version: 10.1.36-MariaDB
 -- PHP Version: 7.2.10
 
@@ -391,7 +391,35 @@ INSERT INTO `login` (`login_id`, `username`, `login_date`, `status_login`) VALUE
 (75, 'kiddee', '2019-06-10 02:38:28', 'N'),
 (76, 'kk', '2019-06-10 02:38:40', 'Y'),
 (77, 'KK', '2019-06-10 02:47:49', 'Y'),
-(78, 'KK', '2019-06-10 02:47:51', 'Y');
+(78, 'KK', '2019-06-10 02:47:51', 'Y'),
+(79, 'KK', '2019-06-10 02:52:10', 'N'),
+(80, 'admin', '2019-06-10 03:17:46', 'Y'),
+(81, 'admin', '2019-06-10 04:48:12', 'N'),
+(82, 'kiddee', '2019-06-10 04:48:23', 'Y'),
+(83, 'kiddee', '2019-06-10 04:48:31', 'N'),
+(84, 'admin', '2019-06-10 04:48:39', 'Y'),
+(85, 'admin', '2019-06-11 05:16:03', 'Y'),
+(86, 'admin', '2019-06-11 05:36:23', 'Y'),
+(87, 'admin', '2019-06-11 05:36:25', 'Y'),
+(88, 'admin', '2019-06-11 06:39:24', 'Y'),
+(89, 'admin', '2019-06-11 06:39:26', 'Y'),
+(90, 'admin', '2019-06-11 10:36:04', 'Y'),
+(91, 'admin', '2019-06-11 10:36:06', 'Y'),
+(92, 'admin', '2019-06-11 10:39:40', 'Y'),
+(93, 'admin', '2019-06-11 10:39:43', 'Y'),
+(94, 'admin', '2019-06-11 10:39:53', 'Y'),
+(95, 'admin', '2019-06-11 10:39:54', 'Y'),
+(96, 'admin', '2019-06-12 01:48:31', 'Y'),
+(97, 'admin', '2019-06-12 03:04:20', 'N'),
+(98, 'KK', '2019-06-12 03:04:40', 'Y'),
+(99, 'KK', '2019-06-12 03:06:28', 'N'),
+(100, 'admin', '2019-06-12 03:06:39', 'Y'),
+(101, 'admin', '2019-06-12 03:07:31', 'Y'),
+(102, 'admin', '2019-06-12 03:07:34', 'Y'),
+(103, 'admin', '2019-06-12 03:07:43', 'Y'),
+(104, 'admin', '2019-06-12 03:07:46', 'Y'),
+(105, 'admin', '2019-06-12 04:46:06', 'N'),
+(106, 'admin', '2019-06-12 04:46:29', 'Y');
 
 -- --------------------------------------------------------
 
@@ -418,7 +446,7 @@ CREATE TABLE `sell` (
 --
 
 INSERT INTO `sell` (`sell_id`, `username`, `groups_id`, `sell_name`, `sell_image`, `sell_address`, `sell_price`, `description`, `date_start`, `sell_number`, `sell_expired_date`) VALUES
-(13, 'admin', 2, 'iphone6s', '0341e9eb-c133-4c80-9e75-f242ce83da5b.jpg', 'สุพรรบุรี', 6500, 'ไม่ค่อยได่เล่นเลยอยากขาย', '2019-06-07 07:59:56', 94, '2019-05-02 00:00:00'),
+(13, 'admin', 2, 'iphone6s', '0341e9eb-c133-4c80-9e75-f242ce83da5b.jpg', 'สุพรรบุรี', 6500, 'ไม่ค่อยได่เล่นเลยอยากขาย', '2019-06-11 10:36:48', 94, '2019-05-02 00:00:00'),
 (14, 'admin', 1, 'Ipad', '4b6edcd4-6f87-4d1d-8950-70298f56db62.jpg', 'ปราจีนบุรี', 14500, 'ไม่ค่อยได้เล่นอยากให้คนอื่นที่จำเป็นได้ใช้', '2019-06-05 07:10:52', 66, '0000-00-00 00:00:00'),
 (15, 'admin', 3, 'หูฟัง Bluetooth', 'e9f4a675-d919-42d4-a5b8-f9f7a2b2a252.jpg', 'กรุงเทพมหานคร', 3500, 'เป็นตัวแทนจำหน่ายจากต่างประเทศ สินค้ามีจำกัด', '2019-06-05 09:16:01', 98, '2019-05-20 00:00:00'),
 (16, 'admin', 3, 'วอสื่อสาร', 'f616161c-b179-4ad3-892a-d2dd634d6ab0.jpg', 'สุโททัย', 500, 'ขายเพราะ ปิดงานเลี้ยงแล้วไม่ได้ใช้', '2019-06-05 10:06:26', 99, '0000-00-00 00:00:00'),
@@ -466,7 +494,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`user_id`, `username`, `password`, `fname`, `lname`, `status`, `phone`, `user_image`, `user_address`) VALUES
-(8650, 'admin', 'admin', 'แอดมิน', 'โว้ย', 'A', '0831101923', '35fabec0-2029-4872-ad18-2df44424bfde.jpg', 'บ้านบึง'),
+(8650, 'admin', 'admin', 'แอดมิน', 'โว้ย', 'A', '0831101923', '43c7e12a-52c7-4719-9599-b21c2c9c3bd0.jpg', 'บ้านบึง'),
 (8651, 'kidakarn', 'kidakarn', 'กิดาการ', 'อินทปัญญา', 'U', '123456789', '12.jpg', 'ปราจีนบุรี'),
 (8666, '23q1', '23', '23', '23', 'U', '123456786', '12.jpg', 'asd'),
 (8667, 'rain', 'rain', 'Patomporn', 'Rungruangrutai', 'U', '0927486210', 'cae7247f-5e04-4cbf-a865-8b38fcbce428.jpg', '36 ซอย แสนสบาย6 ถ.บ้านบึงแกลง\nตำบล บ้านบึง อำเภอ บ้านบึง จ.ชลบุรี'),
@@ -536,7 +564,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `buys`
 --
 ALTER TABLE `buys`
-  MODIFY `buys_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=109;
+  MODIFY `buys_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=108;
 
 --
 -- AUTO_INCREMENT for table `category`
@@ -560,7 +588,7 @@ ALTER TABLE `image`
 -- AUTO_INCREMENT for table `login`
 --
 ALTER TABLE `login`
-  MODIFY `login_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=79;
+  MODIFY `login_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=107;
 
 --
 -- AUTO_INCREMENT for table `sell`
