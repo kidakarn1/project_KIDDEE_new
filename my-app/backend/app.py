@@ -676,11 +676,13 @@ def check_login(cursor,user,passwd):
         cursor.execute(sql,(user,passwd))
         columns = [column[0] for column in cursor.description]
         result = toJson(cursor.fetchall(), columns)
-        sql_insrt_login = """ insert into login (username, status_login) VALUES(%s,%s)"""
-        cursor.execute(sql_insrt_login,(user,'Y'))
-        return jsonify(result),200
+        if result is not None:#ถ้าไม่ใช่ NONE ให้ทำ if
+            sql_insrt_login = """ insert into login (username, status_login) VALUES(%s,%s)"""
+            cursor.execute(sql_insrt_login,(user,'Y'))
+            return jsonify(result),200
+
     except Exception as e:
-        return (str(e)),400
+        return jsonify("NO_DATA"),200
 
 @app.route('/logout/<user>', methods=['GET'])
 @connect_sql()
